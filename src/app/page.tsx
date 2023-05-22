@@ -1,26 +1,28 @@
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "./page.module.css";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main className={styles.main}>
-        <div className={styles.center}>
-          {/* <div className=" p-8 rounded-xl shadow-xl"> */}
-          <Image
-            src="/jeanneandmarkheader.png"
-            alt="Hello"
-            width={750}
-            height={750}
-            priority
-          />
-          {/* </div> */}
+        <div className="flex justify-center items-center flex-col relative py-8">
+          <div>
+            <Image
+              src="/jeanneandmarkheader.png"
+              alt="Hello"
+              width={750}
+              height={750}
+              priority
+            />
+          </div>
+          <div className="flex items-center justify-center flex-col">
+            <p className="text-2xl">June | 04 | 23</p>
+            <p className="text-2xl">7:00 PM</p>
+            <p className="text-2xl">Avanti Restaurant</p>
+          </div>
         </div>
       </main>
     </>

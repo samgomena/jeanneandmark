@@ -1,10 +1,9 @@
 "use client";
 
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import localFont from "next/font/local";
 import Link from "next/link";
-import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -37,55 +36,32 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch">
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    <Link className="text-[#a58953]" href="/about">
+                  <div className="flex space-x-[6rem]">
+                    <Link
+                      className="text-[#a58953] text-xl font-medium"
+                      href="/about"
+                    >
                       About
                     </Link>
 
                     <Link href="/">
                       <div className="flex flex-shrink-0 items-center">
-                        {/* <Image
-                          className="block h-8 w-auto lg:hidden"
-                          src="/jeanneandmark.png"
-                          alt="Your Company"
-                          width={750}
-                          height={750}
-                        />
-                        <Image
-                          className="hidden h-8 w-auto lg:block"
-                          src="/jeanneandmark.png"
-                          alt="Your Company"
-                          width={1000}
-                          height={1000}
-                        /> */}
-                        <p
-                          className={`${gistesy.className} text-[#a58953] text-xl`}
+                        <div
+                          className={`${gistesy.className} text-[#a58953] text-4xl`}
                         >
                           Jeanne & Mark
-                        </p>
+                        </div>
                       </div>
                     </Link>
 
-                    <Link className="text-[#a58953]" href="/registry">
+                    <Link
+                      className="text-[#a58953] text-xl font-medium"
+                      href="/registry"
+                    >
                       Registry
                     </Link>
-                    {/* {navigation.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        // className={classNames(
-                        //   item.current
-                        //     ? "bg-gray-900 text-white"
-                        //     : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                        //   "rounded-md px-3 py-2 text-sm font-medium"
-                        // )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </Link>
-                    ))} */}
                   </div>
                 </div>
               </div>
@@ -114,22 +90,6 @@ export default function Example() {
               >
                 Registry
               </Link>
-              {/* {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))} */}
             </div>
           </Disclosure.Panel>
         </>
