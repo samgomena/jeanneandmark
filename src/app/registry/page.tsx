@@ -3,7 +3,6 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
 import Link from "next/link";
-import styles from "./page.module.css";
 
 const gistesy = localFont({ src: "../../Gistesy.ttf" });
 
@@ -11,13 +10,15 @@ const Registry: React.FC = () => {
   return (
     <>
       <Navbar />
-      <main className={styles.main}>
+      <main className="flex flex-col justify-between items-center p-12 sm:p-20">
+        <div className="pb-4">
+          <p
+            className={`${gistesy.className} text-[#a58953] text-[3rem] sm:text-6xl`}
+          >
+            Donations Welcome
+          </p>
+        </div>
         <div className="flex justify-center items-center relative px-16 flex-col">
-          <div className="pb-4">
-            <p className={`${gistesy.className} text-[#a58953] text-6xl`}>
-              Donations Welcome
-            </p>
-          </div>
           <div className=" lg:p-8 p-4 rounded-xl shadow-xl">
             <Link href="https://venmo.com/u/Jeanne-Schneider-2" className="p-6">
               <Image
