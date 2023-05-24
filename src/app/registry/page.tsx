@@ -30,7 +30,7 @@ const Registry: React.FC = () => {
               />
             </Link>
           </div>
-          <div>
+          <div className="pb-10">
             <Link href="https://venmo.com/u/Jeanne-Schneider-2" className="p-6">
               <Image
                 src="/venmo-logo.png"
@@ -40,6 +40,12 @@ const Registry: React.FC = () => {
               />
             </Link>
           </div>
+        </div>
+        <div className="text-center text-2xl">
+          <p>
+            Donations here will help fund a few small honeymoon trips for Jeanne
+            and Mark as well as a new washer and dryer for their home.
+          </p>
         </div>
       </main>
     </>
