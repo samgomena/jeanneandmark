@@ -17,15 +17,34 @@ const About: React.FC = () => {
             Celebrate With Us!
           </p>
           <p className="text-2xl text-center pb-12">
-            Please join us for drinks and live music as we celebrate our wedding
-            with family and friends.
+            Please join us as we celebrate our wedding with family and friends.
+          </p>
+          <p className="text-2xl text-center pb-12">
+            Live music by{" "}
+            <Link
+              href="https://tonyfurtado.com/"
+              className="group"
+              target="_blank"
+              rel="noopener"
+            >
+              Tony Furtado
+              <span className="inline-flex p-2 group group-hover:-translate-y-1 duration-150 ease-in-out">
+                <ArrowUpRightIcon className="inline-block h-4 w-4" />
+              </span>
+            </Link>
+            from 7 - 9 PM
           </p>
           <p className="text-2xl text-center pb-4">June | 04 | 23</p>
-          <p className="text-2xl text-center pb-12">7:00 PM</p>
+          <p className="text-2xl text-center pb-12">7 PM</p>
           <p className="text-2xl text-center pb-12">
-            <Link href="https://goo.gl/maps/HUFbVDAk2jrYvrM86" rel="noopener">
+            <Link
+              href="https://goo.gl/maps/HUFbVDAk2jrYvrM86"
+              className="group"
+              target="_blank"
+              rel="noopener"
+            >
               Avanti Restaurant
-              <span className="inline-flex p-2">
+              <span className="inline-flex p-2 group group-hover:-translate-y-1 duration-150 ease-in-out">
                 <ArrowUpRightIcon className="inline-block h-4 w-4" />
               </span>
             </Link>
